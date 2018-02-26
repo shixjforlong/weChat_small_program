@@ -20,9 +20,12 @@ Page({
     this.pistonAreaCalc();
   },
   pistonAreaCalc: function () {
-    this.setData({
+    if(this.data.bigDiameter && this.data.smallDiameter){
+        this.setData({
       pistonAreaOutput: (3.14 * (this.data.bigDiameter * this.data.bigDiameter - this.data.smallDiameter * this.data.smallDiameter) / 4).toFixed(3)})
-    this.pistonPressCalc();
+        this.pistonPressCalc();
+    }
+   
   },
   bindInputLiquidPressure: function (e) {
     this.setData({ liquidPressure: e.detail.value })

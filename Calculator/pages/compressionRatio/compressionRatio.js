@@ -20,7 +20,7 @@ Page({
     
   },
   compressionRatioCalc:function(){
-    if(this.data.wireDiameter){
+    if(this.data.wireDiameter && this.data.trenchDepth){
       this.setData({
        compressRatioOutput:((this.data.wireDiameter - this.data.trenchDepth)/ this.data.wireDiameter).toFixed(3)
       })

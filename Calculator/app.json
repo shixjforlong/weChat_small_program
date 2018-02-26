@@ -4,7 +4,8 @@
     "pages/piston/piston",
     "pages/positiveStress/positiveStress",
     "pages/compressionRatio/compressionRatio",
-    "pages/tensileStrength/tensileStrength"
+    "pages/tensileStrength/tensileStrength",
+    "pages/minorDiameter/minorDiameter"
   ],
   "window": {
     "navigationBarTextStyle": "black",

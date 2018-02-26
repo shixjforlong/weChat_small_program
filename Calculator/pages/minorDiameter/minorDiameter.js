@@ -1,31 +1,32 @@
-// pages/positiveStress/positiveStress.js
+// pages/minorDiameter/minorDiameter.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-      positiveStressOutput:"",//正应力计算结果
-      axialForce:"",//轴力
-      crossSectionArea:"",//横截面积
+     nominalDiameter:"",//公称直径
+     pitch:"",//螺距
+     minorDiameterOutput:""//螺纹小径
   },
-  bindInputAxialForce: function (e) {
-    this.setData({ axialForce: e.detail.value })
-    this.positiveStressCalc();
+  bindInputNominalDiameter: function (e) {
+    this.setData({ nominalDiameter: e.detail.value })
+    this.compressionRatioCalc();
     
   },
-  bindInputCrossSectionArea: function (e) {
-    this.setData({ crossSectionArea: e.detail.value })
-    this.positiveStressCalc();
+  bindInputPitch: function (e) {
+    this.setData({ pitch: e.detail.value })
+    this.compressionRatioCalc();
+    
   },
-  positiveStressCalc: function () {
-    if(this.data.crossSectionArea && this.data.axialForce){
+  compressionRatioCalc:function(){
+    if(this.data.nominalDiameter && this.data.pitch){
       this.setData({
-       positiveStressOutput:(this.data.axialForce / this.data.crossSectionArea).toFixed(3)
+       minorDiameterOutput:(this.data.nominalDiameter - this.data.pitch*1.25*0.866025).toFixed(3)
       })
     }
-    
   },
+
   /**
    * 生命周期函数--监听页面加载
    */
