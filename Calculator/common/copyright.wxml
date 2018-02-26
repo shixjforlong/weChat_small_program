@@ -1,0 +1,22 @@
+<template name="copyrightBase">
+  <view style="display:flex;justify-content:center;align-items:center">
+    <view class="weui-footer__text">Copyright © 2017-2018</view>
+    <image src="../../assets/images/copyright.png" class="copyright"></image>
+    <view class="weui-footer__text">老闫 & 小石</view>
+  </view>
+</template>
+
+<template name="copyright1">
+  <view class="weui-footer" style="padding-top:40px;padding-bottom:.52em">
+    <view class="weui-footer__links">
+      <navigator url="../about/about" class="weui-footer__link">关于该小程序</navigator>
+    </view>
+    <template is="copyrightBase" />
+  </view>
+</template>
+
+<template name="copyright2">
+  <view class="weui-footer weui-footer_fixed-bottom">
+    <template is="copyrightBase" />
+  </view>
+</template>

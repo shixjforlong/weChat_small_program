@@ -5,7 +5,9 @@
     "pages/positiveStress/positiveStress",
     "pages/compressionRatio/compressionRatio",
     "pages/tensileStrength/tensileStrength",
-    "pages/minorDiameter/minorDiameter"
+    "pages/minorDiameter/minorDiameter",
+    "pages/acmeDiameter/acmeDiameter",
+    "pages/about/about"
   ],
   "window": {
     "navigationBarTextStyle": "black",
