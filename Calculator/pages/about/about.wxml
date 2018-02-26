@@ -6,7 +6,7 @@
     <view class="page__hd " style='text-align:center'>
       <image class="logo-avatar" src="../../assets/images/icon.png"></image>
       <view class="page__title" style='text-align:center;font-size:28px'>井下工具计算器</view>
-      <view class="page__desc weui-footer" style='text-align:center'>欢迎！该小程序由老闫和小石共同完成；发现Bug或有好的建议，请告诉我们！</view>
+      <view class="page__desc weui-footer" style='text-align:center'>欢迎！该小程序由老闫和小石共同完成,感谢焦师兄技术支持；发现Bug或有好的建议，请告诉我们！</view>
       <button open-type="contact" type="primary" style='margin-top:5px'>点此联系作者</button>
       <view class="weui-cells__title" style='margin-top:50px'>既然来了，赞助五毛钱呗：</view>
       <input class='inputNumberData' bindinput='bindInput' confirm-type='done' placeholder='5毛钱'></input>

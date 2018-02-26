@@ -3,7 +3,7 @@
  <view class="page__hd " style="text-align:center">
     <image class="logo-avatar" src="../../assets/images/icon.png"></image>
     <view class="page__title" style='text-align:center;font-size:28px'>计算器</view>
-    <view class="page__desc weui-footer">该小程序可用于井下工具设计相关计算，以简化日常工作；</view>
+    <view class="page__desc weui-footer">该小程序可用于井下工具相关计算，以简化日常工作；该小程序将持续更新，可点击下方的“关于该小程序”提供建议或报错；作者不对使用该小程序而导致的损失负责！</view>
   </view>
 
    <view class="weui-cells weui-cells_after-title">

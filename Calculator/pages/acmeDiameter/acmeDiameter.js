@@ -22,7 +22,7 @@ Page({
   compressionRatioCalc:function(){
     if(this.data.nominalDiameter){
       this.setData({
-        diameterBigOutput:(this.data.nominalDiameter + this.data.commonVar1)
+        diameterBigOutput:(this.data.nominalDiameter + this.data.commonVar1*1000)/1000
       })
       this.setData({
         diameterSmallOutput:(this.data.nominalDiameter - this.data.commonVar2 * this.data.commonVar3).toFixed(3)
