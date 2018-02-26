@@ -8,6 +8,8 @@ Page({
     bigDiameter:"",//活塞大径
     smallDiameter: "",//活塞小径,
     pistonAreaOutput:"",//活塞面积  计算结果
+    liquidPressure:"",//液体压力
+    pistonPressureOutput:"",//活塞力  计算结果
   },
   bindInputBigDiameter: function (e) {
     this.setData({ bigDiameter: e.detail.value })
@@ -20,6 +22,16 @@ Page({
   pistonAreaCalc: function () {
     this.setData({
       pistonAreaOutput: Math.round(3.14 * (this.data.bigDiameter * this.data.bigDiameter - this.data.smallDiameter * this.data.smallDiameter) / 4)})
+    this.pistonPressCalc();
+  },
+  bindInputLiquidPressure: function (e) {
+    this.setData({ liquidPressure: e.detail.value })
+    this.pistonPressCalc();
+  },
+  pistonPressCalc: function () {
+    this.setData({
+      pistonPressureOutput:this.data.liquidPressure *  this.data.pistonAreaOutput
+      })
   },
   /**
    * 生命周期函数--监听页面加载

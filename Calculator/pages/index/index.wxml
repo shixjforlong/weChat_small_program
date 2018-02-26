@@ -8,14 +8,8 @@
    <view class="weui-cells__title">活塞</view>
    <view class="weui-cells weui-cells_after-title">
     <navigator url="../piston/piston" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
-      <view class="weui-cell__bd">活塞面积计算</view>
-      <view class="weui-cell__ft weui-cell__ft_in-access">活塞面积</view>
-    </navigator>
-  </view>
-   <view class="weui-cells weui-cells_after-title">
-    <navigator url="../pipeline1/pipeline1" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
-      <view class="weui-cell__bd">活塞力计算</view>
-      <view class="weui-cell__ft weui-cell__ft_in-access">活塞力</view>
+      <view class="weui-cell__bd">活塞相关计算</view>
+      <view class="weui-cell__ft weui-cell__ft_in-access">活塞面积/活塞力</view>
     </navigator>
   </view>
 

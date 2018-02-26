@@ -26,6 +26,15 @@
             <input class="weui-input" value="{{smallDiameter}}" name="inputSmallDiameter" bindinput="bindInputSmallDiameter" type="digit" placeholder="请输入活塞小径"></input>
           </view>
         </view>
+        <!--液体压力-->
+        <view class="weui-cell weui-cell_input weui-cell_vcode">
+          <view class="weui-cell__hd">
+            <view class="weui-label">液体压力(MPa)</view>
+          </view>
+          <view class="weui-cell__bd">
+            <input class="weui-input" value="{{liquidPressure}}" name="inputLiquidPressure" bindinput="bindInputLiquidPressure" type="digit" placeholder="请输入液体压力"></input>
+          </view>
+        </view>
 
     </view>
   </view>
@@ -41,6 +50,15 @@
         </view>
         <view class="weui-cell__bd">
           <text class="weui-input" selectable="true">{{pistonAreaOutput}}</text>
+        </view>
+        </view>
+
+         <view class="weui-cell weui-cell_input weui-cell_vcode">
+        <view class="weui-cell__hd">
+          <view class="weui-label">活塞力(N)</view>
+        </view>
+        <view class="weui-cell__bd">
+          <text class="weui-input" selectable="true">{{pistonPressureOutput}}</text>
         </view>
       </view>
     </view>
