@@ -1,7 +1,7 @@
 <!--pages/piston/piston.wxml-->
 <view class="page">
   <view class="page__hd">
-    <view class="page__desc">输入活塞大径和活塞小径，将自动计算活塞面积。</view>
+    <view class="page__desc">输入活塞大径，活塞小径和液体压力，将自动计算活塞面积和活塞力。</view>
   </view>
   <!--输入数据-->
   <form bindsubmit="formSubmit">
