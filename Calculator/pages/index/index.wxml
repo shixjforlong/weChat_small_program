@@ -1,0 +1,45 @@
+<view class="page">
+ <view class="page__hd " style="text-align:center">
+    <image class="logo-avatar" src="../../assets/images/icon.png"></image>
+    <view class="page__title" style='text-align:center;font-size:28px'>计算器</view>
+    <view class="page__desc weui-footer">该小程序可用于储运专业相关计算，以简化日常工作；</view>
+  </view>
+
+   <view class="weui-cells__title">活塞</view>
+   <view class="weui-cells weui-cells_after-title">
+    <navigator url="../piston/piston" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+      <view class="weui-cell__bd">活塞面积计算</view>
+      <view class="weui-cell__ft weui-cell__ft_in-access">活塞面积</view>
+    </navigator>
+  </view>
+   <view class="weui-cells weui-cells_after-title">
+    <navigator url="../pipeline1/pipeline1" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+      <view class="weui-cell__bd">活塞力计算</view>
+      <view class="weui-cell__ft weui-cell__ft_in-access">活塞力</view>
+    </navigator>
+  </view>
+
+   <view class="weui-cells__title">钢体受纯轴向抗拉强度校核
+</view>
+   <view class="weui-cells weui-cells_after-title">
+    <navigator url="../pipeline1/pipeline1" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+      <view class="weui-cell__bd">常规计算</view>
+      <view class="weui-cell__ft weui-cell__ft_in-access">正应力</view>
+    </navigator>
+  </view>
+
+ <view class="weui-cells__title">O型圈拉伸量和压缩率
+</view>
+   <view class="weui-cells weui-cells_after-title">
+    <navigator url="../pipeline1/pipeline1" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+      <view class="weui-cell__bd">压缩率计算</view>
+      <view class="weui-cell__ft weui-cell__ft_in-access">压缩率</view>
+    </navigator>
+  </view>
+   <view class="weui-cells weui-cells_after-title">
+    <navigator url="../pipeline1/pipeline1" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+      <view class="weui-cell__bd">拉伸量计算</view>
+      <view class="weui-cell__ft weui-cell__ft_in-access">拉伸量</view>
+    </navigator>
+  </view>
+</view>

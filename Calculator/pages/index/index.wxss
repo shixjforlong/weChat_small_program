@@ -1,0 +1,7 @@
+.logo-avatar {
+  width: 200rpx;
+  height: 200rpx;
+  margin: 0rpx;
+  border-radius: 100%;
+ }
+ 
