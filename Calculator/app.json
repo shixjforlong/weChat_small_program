@@ -1,7 +1,8 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/piston/piston"
+    "pages/piston/piston",
+    "pages/positiveStress/positiveStress"
   ],
   "window": {
     "navigationBarTextStyle": "black",

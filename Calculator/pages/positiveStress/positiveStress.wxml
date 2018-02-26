@@ -1,0 +1,47 @@
+<!--pages/positiveStress/positiveStress.wxml-->
+<view class="page">
+  <view class="page__hd">
+    <view class="page__desc">输入横截面上的轴力和横截面积，将自动计算正应力。</view>
+  </view>
+  <!--输入数据-->
+  <form bindsubmit="formSubmit">
+  <view class="page__bd3" >
+   <view class="weui-cells__title">数据输入</view>
+    <view class="weui-cells weui-cells_after-title">
+        <!--轴力-->
+        <view class="weui-cell weui-cell_input weui-cell_vcode">
+          <view class="weui-cell__hd">
+            <view class="weui-label">横截面上的轴力(N)</view>
+          </view>
+          <view class="weui-cell__bd">
+            <input class="weui-input" value="{{axialForce}}" name="inputAxialForce" bindinput="bindInputAxialForce" type="digit" placeholder="请输入横截面上的轴力"></input>
+          </view>
+        </view>
+       <!--横截面积-->
+        <view class="weui-cell weui-cell_input weui-cell_vcode">
+          <view class="weui-cell__hd">
+            <view class="weui-label">横截面积(m㎡)</view>
+          </view>
+          <view class="weui-cell__bd">
+            <input class="weui-input" value="{{crossSectionArea}}" name="inputCrossSectionArea" bindinput="bindInputCrossSectionArea" type="digit" placeholder="请输入横截面积"></input>
+          </view>
+        </view>
+    </view>
+  </view>
+  </form>
+
+  <!--输出数据-->
+   <view class="page__bd">
+    <view class="weui-cells__title">数据输出</view>
+    <view class="weui-cells weui-cells_after-title">
+         <view class="weui-cell weui-cell_input weui-cell_vcode">
+        <view class="weui-cell__hd">
+          <view class="weui-label">正应力(MPa)</view>
+        </view>
+        <view class="weui-cell__bd">
+          <text class="weui-input" selectable="true">{{positiveStressOutput}}</text>
+        </view>
+        </view>
+    </view>
+   </view>
+</view>

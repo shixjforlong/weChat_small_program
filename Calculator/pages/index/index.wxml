@@ -16,7 +16,7 @@
    <view class="weui-cells__title">钢体受纯轴向抗拉强度校核
 </view>
    <view class="weui-cells weui-cells_after-title">
-    <navigator url="../pipeline1/pipeline1" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+    <navigator url="../positiveStress/positiveStress" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
       <view class="weui-cell__bd">常规计算</view>
       <view class="weui-cell__ft weui-cell__ft_in-access">正应力</view>
     </navigator>

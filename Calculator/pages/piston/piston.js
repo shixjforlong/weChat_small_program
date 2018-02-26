@@ -21,7 +21,7 @@ Page({
   },
   pistonAreaCalc: function () {
     this.setData({
-      pistonAreaOutput: Math.round(3.14 * (this.data.bigDiameter * this.data.bigDiameter - this.data.smallDiameter * this.data.smallDiameter) / 4)})
+      pistonAreaOutput: (3.14 * (this.data.bigDiameter * this.data.bigDiameter - this.data.smallDiameter * this.data.smallDiameter) / 4).toFixed(1)})
     this.pistonPressCalc();
   },
   bindInputLiquidPressure: function (e) {
@@ -30,7 +30,7 @@ Page({
   },
   pistonPressCalc: function () {
     this.setData({
-      pistonPressureOutput:this.data.liquidPressure *  this.data.pistonAreaOutput
+      pistonPressureOutput:(this.data.liquidPressure *  this.data.pistonAreaOutput).toFixed(1)
       })
   },
   /**
