@@ -1,0 +1,58 @@
+<!--pages/tensileStrength/tensileStrength.wxml-->
+<view class="page">
+  <view class="page__hd">
+    <view class="page__desc">输入轴径，O型圈内径和O型圈线径，将自动计算拉伸量。</view>
+  </view>
+  <!--输入数据-->
+  <form bindsubmit="formSubmit">
+  <view class="page__bd3" >
+   <view class="weui-cells__title">数据输入</view>
+    <view class="weui-cells weui-cells_after-title">
+        <!--轴径-->
+        <view class="weui-cell weui-cell_input weui-cell_vcode">
+          <view class="weui-cell__hd">
+            <view class="weui-label">轴径(mm)</view>
+          </view>
+          <view class="weui-cell__bd">
+            <input class="weui-input" value="{{shaftDiameter}}" name="inputShaftDiameter" bindinput="bindInputShaftDiameter" type="digit" placeholder="请输入轴径"></input>
+          </view>
+        </view>
+       <!--O型圈内径-->
+        <view class="weui-cell weui-cell_input weui-cell_vcode">
+          <view class="weui-cell__hd">
+            <view class="weui-label">O型圈内径(mm)</view>
+          </view>
+          <view class="weui-cell__bd">
+            <input class="weui-input" value="{{internalDiameter}}" name="inputInternalDiameter" bindinput="bindInputInternalDiameter" type="digit" placeholder="请输入O型圈内径"></input>
+          </view>
+        </view>
+        <!--O型圈线径-->
+        <view class="weui-cell weui-cell_input weui-cell_vcode">
+          <view class="weui-cell__hd">
+            <view class="weui-label">O型圈线径(mm)</view>
+          </view>
+          <view class="weui-cell__bd">
+            <input class="weui-input" value="{{wireDiameter}}" name="inputWireDiameter" bindinput="bindInputWireDiameter" type="digit" placeholder="请输入O型圈线径"></input>
+          </view>
+        </view>
+    </view>
+  </view>
+  </form>
+
+  <!--输出数据-->
+   <view class="page__bd">
+    <view class="weui-cells__title">数据输出</view>
+    <view class="weui-cells weui-cells_after-title">
+         <view class="weui-cell weui-cell_input weui-cell_vcode">
+        <view class="weui-cell__hd">
+          <view class="weui-label">拉伸量</view>
+        </view>
+        <view class="weui-cell__bd">
+          <text class="weui-input" selectable="true">{{tensileStrengthOutput}}</text>
+        </view>
+        </view>
+    </view>
+   </view>
+</view>
+
+

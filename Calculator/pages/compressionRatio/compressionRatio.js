@@ -1,30 +1,30 @@
-// pages/positiveStress/positiveStress.js
+// pages/compressionRatio/compressionRatio.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-      positiveStressOutput:"",//正应力计算结果
-      axialForce:"",//轴力
-      crossSectionArea:"",//横截面积
+     wireDiameter:"",//O型圈线径
+     trenchDepth:"",//沟槽深度
+     compressRatioOutput:""
   },
-  bindInputAxialForce: function (e) {
-    this.setData({ axialForce: e.detail.value })
-    this.positiveStressCalc();
+  bindInputWireDiameter: function (e) {
+    this.setData({ wireDiameter: e.detail.value })
+    this.compressionRatioCalc();
     
   },
-  bindInputCrossSectionArea: function (e) {
-    this.setData({ crossSectionArea: e.detail.value })
-    this.positiveStressCalc();
+  bindInputTrenchDepth: function (e) {
+    this.setData({ trenchDepth: e.detail.value })
+    this.compressionRatioCalc();
+    
   },
-  positiveStressCalc: function () {
-    if(this.data.crossSectionArea){
+  compressionRatioCalc:function(){
+    if(this.data.wireDiameter){
       this.setData({
-       positiveStressOutput:(this.data.axialForce / this.data.crossSectionArea).toFixed(3)
+       compressRatioOutput:((this.data.wireDiameter - this.data.trenchDepth)/ this.data.wireDiameter).toFixed(3)
       })
     }
-    
   },
   /**
    * 生命周期函数--监听页面加载

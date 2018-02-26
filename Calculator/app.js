@@ -12,12 +12,5 @@ App({
   },
   onError(error){
     console.log(error);
-  },
-  globalData:{//全局数据
-    greeting:[
-      'hello ~',
-      'hola ~',
-      '您好 ~'
-    ]
   }
 })

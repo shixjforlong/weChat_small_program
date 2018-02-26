@@ -1,30 +1,36 @@
-// pages/positiveStress/positiveStress.js
+// pages/tensileStrength/tensileStrength.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-      positiveStressOutput:"",//正应力计算结果
-      axialForce:"",//轴力
-      crossSectionArea:"",//横截面积
+     shaftDiameter:"",//轴径 d
+     internalDiameter:"",//内径 d1
+     wireDiameter:"",//线径 d2
+     tensileStrengthOutput:""
   },
-  bindInputAxialForce: function (e) {
-    this.setData({ axialForce: e.detail.value })
-    this.positiveStressCalc();
+  bindInputShaftDiameter: function (e) {
+    this.setData({ shaftDiameter: e.detail.value })
+    this.compressionRatioCalc();
     
   },
-  bindInputCrossSectionArea: function (e) {
-    this.setData({ crossSectionArea: e.detail.value })
-    this.positiveStressCalc();
+  bindInputInternalDiameter: function (e) {
+    this.setData({ internalDiameter: e.detail.value })
+    this.compressionRatioCalc();
+    
   },
-  positiveStressCalc: function () {
-    if(this.data.crossSectionArea){
+  bindInputWireDiameter: function (e) {
+    this.setData({ wireDiameter: e.detail.value })
+    this.compressionRatioCalc();
+    
+  },
+  compressionRatioCalc:function(){
+    if(this.data.shaftDiameter && this.data.internalDiameter && this.data.wireDiameter){
       this.setData({
-       positiveStressOutput:(this.data.axialForce / this.data.crossSectionArea).toFixed(3)
+       tensileStrengthOutput:((this.data.shaftDiameter + this.data.wireDiameter)/ (this.data.internalDiameter + this.data.wireDiameter)).toFixed(3)
       })
     }
-    
   },
   /**
    * 生命周期函数--监听页面加载
