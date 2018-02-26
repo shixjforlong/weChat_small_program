@@ -40,27 +40,29 @@
   </view>
   </form>
 
-  <!--输出数据-->
-   <view class="page__bd">
+    <!--输出数据-->
+  <view class="page__bd">
     <view class="weui-cells__title">数据输出</view>
     <view class="weui-cells weui-cells_after-title">
-         <view class="weui-cell weui-cell_input weui-cell_vcode">
-        <view class="weui-cell__hd">
-          <view class="weui-label">活塞面积(m㎡)</view>
-        </view>
-        <view class="weui-cell__bd">
-          <text class="weui-input" selectable="true">{{pistonAreaOutput}}</text>
-        </view>
+      
+       <view class="weui-cell weui-cell_input weui-cell_vcode">
+           <view class="weui-cell__hd">
+            <view class="weui-label">活塞面积(m㎡)</view>
+          </view>
+          <view class="weui-cell__bd">
+            <text class="weui-input" selectable="true">{{pistonAreaOutput}}</text>
+           </view>
         </view>
 
          <view class="weui-cell weui-cell_input weui-cell_vcode">
-        <view class="weui-cell__hd">
-          <view class="weui-label">活塞力(N)</view>
+           <view class="weui-cell__hd">
+             <view class="weui-label">活塞力(N)</view>
+          </view>
+          <view class="weui-cell__bd">
+             <text class="weui-input" selectable="true">{{pistonPressureOutput}}</text>
+          </view>
         </view>
-        <view class="weui-cell__bd">
-          <text class="weui-input" selectable="true">{{pistonPressureOutput}}</text>
-        </view>
-      </view>
+
     </view>
-   </view>
+  </view>
 </view>
